@@ -1,0 +1,77 @@
+<!DOCTYPE html><!--how do I push this to github?-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ian's Home Service - Registration</title>
+    <link rel="stylesheet" href="styles.css"/> <!-- Link to the CSS file-->
+    <script src="script.js"></script> <!-- Link to JavaScript file-->
+  </head>
+  <body >
+    <h1 id="title">Ian's Handy Service</h1>
+    <p id="description">Precision guess work!</p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+      <fieldset>
+        <label for="checkdiy">
+          <div class="center-checkbox">
+            <input id="checkdiy" type="checkbox" class="inline" value="diy" > More DIY than you can handle?
+          </div>
+        </label>
+        <label for="checktime">
+          <div class="center-checkbox">
+            <input id="checktime" type="checkbox" class="inline" value="time"> More time than you have?
+          </div>
+        </label>
+        <p>Please fill out our quick quote form<br>we will get back to you in no time!</p>
+      </fieldset>
+      <fieldset>
+        <h2>First we'll need a couple of details...</h2>
+        <label id="name-label" for="first-name">First Name Here Please: <input id="name" name="first-name" type="text" placeholder="First Name" required /></label>
+        <label id="last-name-label" for="last-name">Then Your Last Name Here: <input id="last-name" name="last-name" type="text" placeholder="Last Name" required /></label>
+        <label id="number-label" for="phone-number">Phone Number Here: <input id="number" type="number" min="7" max="15" placeholder="Phone Number" required></label>
+        <label id="email-label" for="email">Your Contact Email Here: <input id="email" name="email" type="email" placeholder="Email Address" required /></label>
+        <label for="new-password">A Memorable and Secure Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <h2>What type of service would you like?</h2>
+        <label for="pay-as-you-go">
+          <input id="pay-as-you-go" type="radio" name="service-type" class="inline" value="pay-as-you-go" /> Pay as you go
+        </label>
+        <label for="subscription">
+          <input id="subscription" type="radio" name="service-type" class="inline" value="subscription" /> Subscription
+        </label>
+        
+      </fieldset>
+      <fieldset>
+        <h2>What work needs undertaking?</h2>
+        <label for="job-description" >Can you give a description please?
+          <textarea id="job-description" name="job-description" rows="6" cols="30" placeholder="A thorough description of the work required..."></textarea>
+        </label>
+        <label for="site-picture">Here's your chance to upload some pictures
+          <div class="file-input-container">
+            <input id="site-picture" type="file" name="files" multiple/>
+            <label for="site-picture" class="file-label">Choose Pictures</label>
+          </div>
+        </label>
+        <label for="dropdown">For 5% discount please tell us how did you heard about us?
+          <select id="dropdown" name="referrer">
+            <option value="">Prefer Not To Say</option>
+            <option value="1">Friends and Family</option>
+            <option value="2">Social Media(which in box below)</option>
+            <option value="3">Other Business(who in box below)</option>
+            <option value="4">Other(...in box below)</option>
+          </select>
+        </label>
+        <label for="other">The Box Below:
+          <textarea id="other" name="other" rows="1" cols="30" placeholder="Who, Which, Other?"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    <div class="center-checkbox">
+      <label for="terms-and-conditions">
+        <input id="terms-and-conditions" type="checkbox" name="terms-and-conditions" class="inline" value="terms-and-conditions" required/>
+        Accept the  <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+    </div>
+    </form>
+  </body>
+</html>
